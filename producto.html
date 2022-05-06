@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TiendaFrontEnd</title>
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <!--Css-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header class="header">
+      <a href="index.html">
+        <img
+          class="header__logo"
+          src="/img/LogoTiendaFrontEnd.png"
+          alt="Logotipo"
+        />
+      </a>
+    </header>
+
+    <!--Nav-->
+    <nav class="nav">
+      <a class="nav__enlace" href="/index.html">Tienda</a>
+      <a class="nav__enlace" href="/nosotros.html">Nosotros</a>
+    </nav>
+
+    <!--Producto-->
+    <main class="contenedor">
+      <h1>React JS</h1>
+
+      <div class="camisa">
+        <img class="camisa__image" src="/img/3.jpg" alt="Imagen Producto" />
+
+        <div class="camisa__contenido">
+          <p class="camisa__texto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+            odit quas accusantium. Quo inventore iste non porro adipisci
+            perferendis velit illo ipsa quod illum, magni labore eaque iure in
+            consequuntur.
+          </p>
+
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected value="">
+                -- Selecciona la talla --
+              </option>
+              <option value="">S</option>
+              <option value="">M</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+            </select>
+            <input
+              class="formulario__campo"
+              type="number"
+              placeholder="Cantidad"
+              min="1"
+            />
+            <input
+              class="formulario__submit"
+              type="submit"
+              value="Agregar al carrito"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__texto">
+        Tienda Virtual Front-End - Todos los derechos reservados 2022.
+      </p>
+    </footer>
+  </body>
+</html>
